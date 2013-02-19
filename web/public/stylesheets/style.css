@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Microsoft Yahei";
+}
+a {
+  color: #00a0e9;
+}
+.hidden {
+  display: none !important;
+}
+#top {
+  background: #00a0e9;
+  width: 100%;
+  height: 7px;
+  position: fixed;
+}
+#top .profile {
+  display: block;
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  width: 60px;
+  text-align: center;
+  font-size: 12px;
+  margin-left: 7px;
+  background: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  text-decoration: none;
+}
+#top .profile:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+#content {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+#content .logo {
+  color: #333;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: 'Uncial Antiqua', cursive, "Microsoft Yahei", "SimSun";
+  margin-bottom: 20px;
+}
+#content .step {
+  margin-bottom: 20px;
+}
+#content h2 {
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 400;
+  font-size: 18px;
+  height: 30px;
+  line-height: 30px;
+}
+#footer {
+  width: 960px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  margin: 0 auto;
+  font-size: 12px;
+}
+#footer p {
+  color: #999;
+  margin-right: 20px;
+  text-align: right;
+}
+#p_1 #content {
+  height: 500px;
+}
+#p_1 .logo {
+  margin-bottom: 20px;
+  text-align: center;
+}
+#p_1 .form {
+  *zoom: 1;
+  position: relative;
+}
+#p_1 .form:before,
+#p_1 .form:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#p_1 .form:after {
+  clear: both;
+}
+#p_1 .gallery_label {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  text-indent: 10px;
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  width: 500px;
+  color: #999;
+}
+#p_1 .gallery_name {
+  width: 500px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  padding: 2px;
+  border: 1px solid #ccc;
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
+#p_1 .gallery_ok {
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  width: 80px;
+  background: #00a0e9;
+  color: #fff;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+}
+#p_1 .kpm {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  display: block;
+  background: #000;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 40px;
+  text-align: center;
+}
+#p_1 .step {
+  padding: 100px 0 100px 220px;
+  position: relative;
+}
+#p_signup .logo {
+  margin-bottom: 50px;
+}
+#p_signup .form {
+  width: 500px;
+  margin-bottom: 100px;
+}
+#p_signup .form .group {
+  margin-bottom: 20px;
+  *zoom: 1;
+}
+#p_signup .form .group:before,
+#p_signup .form .group:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#p_signup .form .group:after {
+  clear: both;
+}
+#p_signup .form .group label {
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  font-size: 12px;
+}
+#p_signup .form .group input {
+  display: block;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  width: 300px;
+  padding: 0 4px;
+}
+#p_signup .form .group .signup_ok {
+  display: block;
+  float: left;
+  margin-left: 160px;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #00a0e9;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+#p_login .logo {
+  margin-bottom: 50px;
+}
+#p_login .form {
+  width: 500px;
+  margin-bottom: 100px;
+}
+#p_login .form .group {
+  margin-bottom: 20px;
+  *zoom: 1;
+}
+#p_login .form .group:before,
+#p_login .form .group:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#p_login .form .group:after {
+  clear: both;
+}
+#p_login .form .group label {
+  width: 150px;
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  font-size: 12px;
+}
+#p_login .form .group input {
+  display: block;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  width: 300px;
+  padding: 0 4px;
+}
+#p_login .form .group .signup_ok {
+  display: block;
+  float: left;
+  margin-left: 160px;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #00a0e9;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+#p_home .gallerys li {
+  margin-left: 20px;
+}
+#p_home h2 a {
+  color: #00a0e9;
+}

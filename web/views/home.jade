@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  div(id="p_home")
+      div(id="top")
+        a(class="profile", href="http://baidu.com")= username
+      div(id="content")
+        h1(class="logo") 开发者中心
+        div(class="step")
+          h2
+            a(href="/") 首页
+        div(class="step")
+          h2 我的Gallery
+          - if (gallerys.length)
+            ul(class="gallerys")
+              - gallerys.forEach(function(gallery){
+                li= gallery.name
+              - })
+        div(class="step")
+          h2
+            a(href="/create") 创建新Gallery
+        div(class="step")
+          h2
+            a(href="/logout") 登出
+      div(id="footer")
+        p 2013 &copy; kissy
+  script(src="/javascripts/site.js")
+  script(type="text/javascript")
+    KISSY.use('home', function(H){});

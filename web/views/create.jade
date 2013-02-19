@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  div(id="p_1")
+      div(id="top")
+        a(class="profile", href="/")= username
+      div(id="content")
+        h1(class="logo") 获取Gallery模板
+        div(class="step")
+          div(class="form")
+            label(class="gallery_label J_galleryLabel") 请输入需要创建的Gallery名字
+            input(class="gallery_name J_galleryName",type="text")
+            a(class="gallery_ok") 确认
+            //span(class="kpm") KPM
+      div(id="footer")
+        p 2013 &copy; kissy
+  script(src="/javascripts/site.js")
+  script(type="text/javascript")
+    KISSY.use('create', function(C){});

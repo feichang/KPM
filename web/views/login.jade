@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  div(id="p_login")
+      div(id="top")
+      div(id="content")
+        h1(class="logo") 登陆KPM
+        div(class="step")
+          div(class="form J_form", data-url="/login")
+            div(class="group")
+              label(class="") 邮箱
+              input(class="email J_email", name="email", type="text")
+            div(class="group")
+              label(class="") 密码
+              input(class="password J_password", name="password", type="password")
+            div(class="group btn_container")
+              a(class="signup_ok J_loginOk") 登陆
+      div(id="footer")
+        p 2013 &copy; kissy gallery team
+  script(src="/javascripts/site.js")
+  script(type="text/javascript")
+    KISSY.use('login', function(L){});
