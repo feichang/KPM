@@ -4,10 +4,10 @@ var mongoose = require('mongoose'),
   
 var GallerySchema = new Schema({
   name: { type: String, unique: true },
-  owner: { type: String, unique: true },
+  owner: { type: String},
   version: { type: String},
-  category: { type: Number, unique: true },
-  state: { type: Number, unique: true }
+  category: { type: Number},
+  state: { type: Number}
 });
 
 mongoose.model('Gallery', GallerySchema);

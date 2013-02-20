@@ -27,6 +27,24 @@ app.configure(function(){
   app.use(express.methodOverride());
   app.use(app.router);
   app.use(express.static(path.join(__dirname, 'public')));
+  
+  //错误处理
+  app.use(function(req, res, next){
+    res.status(404);
+
+    if (req.accepts('html')) {
+      res.render('404', { title: '404' });
+      return;
+    }
+
+    if (req.accepts('json')) {
+      res.send({ error: 'Not found' });
+      return;
+    }
+
+    res.type('txt').send('Not found');
+  });
+  
 });
 
 app.configure('development', function(){

@@ -8,6 +8,7 @@ var routes = require('../routes'),
 module.exports = function(app){
 	app.get('/', site.index);
 	app.get('/create', site.create);
+	app.post('/create', site.create);
 	app.get('/commit', site.commit);
 
 	//signup

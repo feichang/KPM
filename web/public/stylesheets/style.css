@@ -244,7 +244,45 @@ a {
   cursor: pointer;
 }
 #p_home .gallerys li {
-  margin-left: 20px;
+  *zoom: 1;
+  padding-left: 100px;
+  list-style: none;
+  line-height: 30px;
+  border-bottom: 1px dashed #eee;
+}
+#p_home .gallerys li:before,
+#p_home .gallerys li:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+#p_home .gallerys li:after {
+  clear: both;
+}
+#p_home .gallerys li a,
+#p_home .gallerys li span {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  width: 50px;
+}
+#p_home .gallerys li .name {
+  min-width: 150px;
+}
+#p_home .gallerys li .version {
+  width: 100px;
+}
+#p_home .gallerys li .state {
+  width: 70px;
+}
+#p_home .gallerys li .version,
+#p_home .gallerys li .state,
+#p_home .gallerys li .download,
+#p_home .gallerys li .update {
+  font-size: 12px;
+}
+#p_home h2 {
+  color: #00a0e9;
 }
 #p_home h2 a {
   color: #00a0e9;

@@ -7,10 +7,10 @@ block content
       div(id="content")
         h1(class="logo") 获取Gallery模板
         div(class="step")
-          div(class="form")
+          div(class="form J_form", data-url="/create")
             label(class="gallery_label J_galleryLabel") 请输入需要创建的Gallery名字
-            input(class="gallery_name J_galleryName",type="text")
-            a(class="gallery_ok") 确认
+            input(class="gallery_name J_galleryName",type="text", name="gallery_name")
+            a(class="gallery_ok J_createGallery") 确认
             //span(class="kpm") KPM
       div(id="footer")
         p 2013 &copy; kissy

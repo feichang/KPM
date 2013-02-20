@@ -2,6 +2,7 @@ extends layout
 
 block content
   div(id="top")
+    a(class="profile", href="/home")= username
   div(id="content")
     h1(class="logo")= title
     a(href="/signup") 注册
@@ -11,3 +12,5 @@ block content
     a(href="/home") 开发者中心
     br
     a(href="/create") 获取Gallery模板
+    br
+    a(href="/404") 404页面

@@ -238,10 +238,37 @@ a{
 #p_home{
 	.gallerys{
 		li{
-			margin-left: 20px;
+			.clearfix;
+			padding-left: 100px;
+			list-style: none;
+			line-height: 30px;
+			border-bottom: 1px dashed #eee;
+
+			a,span{
+				display: block;
+				float: left;
+				margin-right: 10px;
+				width: 50px;
+			}
+			.name{
+				min-width: 150px;
+			}
+			.version{
+				width: 100px;
+			}
+			.state{
+				width: 70px;
+			}
+			.version, .state, .download, .update{
+				font-size: 12px;
+			}
 		}
+
 	}
-	h2 a{
-		color: #00a0e9;
-	}
+	h2{
+		color:#00a0e9;
+		a{
+			color: #00a0e9;
+		}
+	}	
 }

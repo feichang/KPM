@@ -6,6 +6,9 @@ block content
     div(id="content")
       h1(class="logo") 404
       div(class="step")
-        p 未找到页面
+        p 未找到页面, 3秒后即将跳会首页
     div(id="footer")
       p 2013 &copy; kissy gallery team
+    script(src="/javascripts/site.js")
+    script(type="text/javascript")
+      KISSY.use('error', function(E){});

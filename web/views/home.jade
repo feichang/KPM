@@ -14,7 +14,17 @@ block content
           - if (gallerys.length)
             ul(class="gallerys")
               - gallerys.forEach(function(gallery){
-                li= gallery.name
+                li
+                  a(class="name")= gallery.name
+                  span(class="state")
+                    if gallery.state == 0
+                      开发中
+                    else
+                      线上运行
+                  span(class="version") version : 
+                    = gallery.version 
+                  a(class="download") [ 下载 ]
+                  a(class="update") [ 更新 ]
               - })
         div(class="step")
           h2
