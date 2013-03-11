@@ -5,7 +5,6 @@ var mongoose = require('mongoose'),
 var GallerySchema = new Schema({
   name: { type: String, unique: true },
   owner: { type: String},
-  version: { type: String},
   category: { type: Number},
   state: { type: Number}
 });

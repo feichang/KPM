@@ -6,8 +6,8 @@ var util = require('./util'),
 	github = require("github"),
 	modules = require('../modules'),
 	User = modules.User,
-	Gallery = modules.Gallery,
-	Test = modules.Test;
+	GitUser = modules.GitUser,
+	Gallery = modules.Gallery;
 
 //首页
 exports.index = function(req, res){
@@ -19,14 +19,11 @@ exports.index = function(req, res){
 		res.render('index', { title: 'KPM', username: '登陆'});
 	}
   
-  User.find({ }, function(err, docs){
+  /*User.find({ }, function(err, docs){
 	console.log(docs);
 		
-  });
-  Test.find({ }, function(err, docs){
-	console.log(docs);
-		
-  });
+  });*/
+  
 };
 
 //注册

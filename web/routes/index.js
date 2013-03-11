@@ -3,7 +3,9 @@
  */
 
 var routes = require('../routes'),
-    site = require('../routes/site');
+    site = require('../routes/site'),
+    user = require('../routes/user'),
+    gallery = require('../routes/gallery');
 
 module.exports = function(app){
 	app.get('/', site.index);
@@ -25,4 +27,13 @@ module.exports = function(app){
 	//home
 	app.get('/home', site.home);
 	app.post('/home', site.home);
+
+	//公用接口
+	//user
+	app.post('/adduser', user.adduser);
+	app.post('/hasuser', user.hasuser);
+	//gallery
+	app.post('/addgallery', gallery.addgallery);
+	app.post('/getgallery', gallery.getgallery);
+	app.post('/pullgallery', gallery.pullgallery);
 }

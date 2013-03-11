@@ -11,6 +11,8 @@ mongoose.connect(config.db, function (err) {
 // models
 require('./user');
 require('./gallery');
+require('./gituser');
 
 exports.User = mongoose.model('User');
 exports.Gallery = mongoose.model('Gallery');
+exports.GitUser = mongoose.model('GitUser');
