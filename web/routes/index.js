@@ -30,10 +30,10 @@ module.exports = function(app){
 
 	//公用接口
 	//user
-	app.post('/adduser', user.adduser);
-	app.post('/hasuser', user.hasuser);
+	app.get('/adduser', user.adduser);
+	app.get('/hasuser', user.hasuser);
 	//gallery
-	app.post('/addgallery', gallery.addgallery);
-	app.post('/getgallery', gallery.getgallery);
-	app.post('/pullgallery', gallery.pullgallery);
+	app.get('/addgallery', gallery.addgallery);
+	app.get('/getgallery', gallery.getgallery);
+	app.get('/pullgallery', gallery.pullgallery);
 }

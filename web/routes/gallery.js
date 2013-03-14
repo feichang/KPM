@@ -29,7 +29,7 @@ exports.addgallery = function(req, res){
 			});
 			gallery.save();
 
-			res.json({
+			res.jsonp({
 				state: 1,
 				message: 'Succuss! Create gallery succuss.'
 			});
@@ -40,7 +40,7 @@ exports.addgallery = function(req, res){
 //获取gallery
 exports.getgallery = function(req, res){
 	Gallery.find({}, function(err, docs){
-		res.json({
+		res.jsonp({
 			gallery: docs,
 			state: docs[0].state
 		});
@@ -51,7 +51,7 @@ exports.pullgallery = function(req, res){
 	Gallery.findOne({name: req.body.name},function(err, doc){
 		doc.state = 2;
 		doc.save();
-		res.json({
+		res.jsonp({
 			state: 1,
 			message: 'pull succuss'
 		});

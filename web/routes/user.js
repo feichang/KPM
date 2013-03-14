@@ -4,9 +4,9 @@
  * @date:    2013-03-11 
  *
  * check user:
- * 		KISSY.Ajax.post('/hasuser', {username: 'feichang'}, function(d){console.log(d);});
+ * 		KISSY.IO.jsonp('/hasuser', {username: 'feichang'}, function(d){console.log(d);});
  * add user:
- * 		KISSY.Ajax.post('/adduser', {username: 'feichang', tokenId: 123, token: 'abcd'}, function(d){console.log(d);});
+ * 		KISSY.IO.jsonp('/adduser', {username: 'feichang', tokenId: 123, token: 'abcd'}, function(d){console.log(d);});
  *
  * TODO:
  * 1, safe verify at add user
@@ -21,12 +21,12 @@ exports.hasuser = function(req, res){
 
   GitUser.find({ username: req.body.username}, function(err, docs){
 	if(docs.length == 0){
-		res.json({
+		res.jsonp({
 			state: 0,
 			message: 'fail, the db do not exists the username'
 		});
 	}else{ 
-  		res.json({
+  		res.jsonp({
 			state: 1,
 			message: 'succuss, the db exists the username',
 			tokenId: docs[docs.length-1].tokenId
@@ -45,7 +45,7 @@ exports.adduser = function(req, res){
 		tokenId: req.body.tokenId
 	});
 	user.save();
-	res.json({
+	res.jsonp({
 		state: 1,
 		message: 'add user succuss'
 	});
